@@ -1,0 +1,52 @@
+.tab-navigation {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #666;
+}
+
+.tab-btn:hover {
+    background: #e9ecef;
+    color: #333;
+}
+
+.tab-btn.active {
+    background: #5cb85c;
+    color: white;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-completed {
+    background: #dc3545;
+    color: white;
+}
+
+.status-full {
+    background: #ffc107;
+    color: #333;
+}

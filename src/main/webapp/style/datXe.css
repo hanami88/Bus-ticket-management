@@ -1,0 +1,485 @@
+/* Reset và base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: #5cb85c;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(92, 184, 92, 0.2);
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 1em;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Main content - Layout dọc */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Messages */
+.error-message {
+  width: 100%;
+  background: #f8d7da;
+  border-left: 4px solid #dc3545;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+/* Trip info - Phía trên */
+.trip-info {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.trip-info h2 {
+  color: #5cb85c;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #5cb85c;
+  padding-bottom: 12px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.info-item {
+  padding: 18px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #5cb85c;
+  transition: all 0.3s ease;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(92, 184, 92, 0.15);
+  background: #fff;
+}
+
+.info-item .label {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-item .value {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.info-item .value.price {
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Seat availability */
+.seats-available .available {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.seats-available .limited {
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.seats-available .sold-out {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+/* Booking form - Phía dưới nằm ngang */
+.booking-form {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.booking-form h2 {
+  color: #5cb85c;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #5cb85c;
+  padding-bottom: 12px;
+}
+
+/* Form layout nằm ngang */
+.booking-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 1em;
+}
+
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-group input[type="number"]:focus {
+  border-color: #5cb85c;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(92, 184, 92, 0.1);
+}
+
+.form-group input[type="number"]:hover {
+  border-color: #5cb85c;
+}
+
+/* Availability info */
+.availability-info {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.availability-info .available {
+  color: #28a745;
+}
+
+.availability-info .limited {
+  color: #ffc107;
+}
+
+.availability-info .sold-out {
+  color: #dc3545;
+}
+
+/* Total price group */
+.total-price-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.total-price {
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  margin-bottom: 10px;
+}
+
+/* Buttons group */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-cancel, .btn-confirm {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-cancel {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #545b62;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+.btn-confirm {
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.btn-confirm:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+/* Sold out notice */
+.sold-out-notice {
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border-left: 4px solid #dc3545;
+  margin: 20px 0;
+}
+
+.sold-out-notice h3 {
+  color: #dc3545;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+.sold-out-notice p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1em;
+}
+
+.btn-back {
+  background: #6c757d;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-back:hover {
+  background: #545b62;
+  transform: translateY(-1px);
+}
+
+/* Form validation styles */
+input[type="number"]:invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+input[type="number"]:valid {
+  border-color: #28a745;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .booking-form form {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+  
+  .button-group {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      gap: 15px;
+  }
+  
+  .total-price-group {
+      grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+  
+  .header {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .header h1 {
+      font-size: 1.8em;
+  }
+  
+  .info-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+  }
+  
+  .trip-info, .booking-form {
+      padding: 20px;
+  }
+  
+  .booking-form form {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+  
+  .button-group {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .info-item {
+      padding: 15px;
+      min-height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .info-item .label {
+      font-size: 0.8em;
+  }
+  
+  .info-item .value {
+      font-size: 1em;
+  }
+  
+  .booking-form h2 {
+      font-size: 1.3em;
+  }
+  
+  .total-price {
+      font-size: 1.2em;
+      padding: 12px 15px;
+  }
+  
+  .form-group input[type="number"] {
+      padding: 10px 12px;
+      font-size: 1em;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.trip-info {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.booking-form {
+  animation: fadeIn 0.5s ease-out 0.1s both;
+}
+
+/* Smooth transitions */
+.info-item, .btn-cancel, .btn-confirm, .form-group input {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Better focus states */
+.btn-cancel:focus,
+.btn-confirm:focus,
+input[type="number"]:focus {
+  outline: 2px solid #5cb85c;
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.btn-confirm:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}

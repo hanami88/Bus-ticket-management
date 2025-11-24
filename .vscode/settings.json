@@ -1,0 +1,18 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "triggerTaskOnSave.tasks": {
+        "Auto Compile on Save": [
+            "src/**/*.java",
+            "src/**/*.jsp",
+            "src/**/*.xml",
+            "src/**/*.properties",
+            "src/**/*.json",
+            "src/**/*.html",
+            "src/**/*.css"
+        ]
+    },
+    "files.associations": {
+        "*.css": "css",
+        "*.jsp": "html"
+    }
+}

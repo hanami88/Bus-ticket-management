@@ -1,0 +1,346 @@
+/* Reset và base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: #5cb85c;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(92, 184, 92, 0.3);
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.user-info {
+  color: white;
+  font-size: 1.1em;
+}
+
+/* Main content */
+.main-content {
+  display: grid;
+  gap: 30px;
+}
+
+/* Payment container */
+.payment-container {
+  display: grid;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Booking summary */
+.booking-summary {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary h2 {
+  color: #5cb85c;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #5cb85c;
+  padding-bottom: 10px;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #5cb85c;
+  transition: all 0.3s ease;
+}
+
+.summary-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item.total {
+  background: linear-gradient(135deg, #d9534f, #f0ad4e);
+  color: white;
+  border-left: 4px solid #fff;
+  font-weight: 700;
+  font-size: 1.1em;
+  box-shadow: 0 4px 15px rgba(217, 83, 79, 0.3);
+}
+
+.summary-item .label {
+  font-weight: 600;
+  color: #666;
+}
+
+.summary-item.total .label {
+  color: white;
+}
+
+.summary-item .value {
+  font-weight: 500;
+  color: #333;
+}
+
+.summary-item.total .value {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* QR Payment */
+.qr-payment {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.qr-payment h2 {
+  color: #5cb85c;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #5cb85c;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.qr-code {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border: 2px solid #5cb85c;
+}
+
+.qr-code img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.qr-description {
+  color: #666;
+  font-size: 1.1em;
+  max-width: 400px;
+  line-height: 1.5;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #5cb85c;
+}
+
+/* Confirm section */
+.confirm-section {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notice {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border-left: 4px solid #f0ad4e;
+}
+
+.notice p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-back, .btn-confirm {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-width: 150px;
+}
+
+.btn-back {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-back:hover {
+  background: #545b62;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+.btn-confirm {
+  background: linear-gradient(135deg, #d9534f, #f0ad4e);
+  color: white;
+  box-shadow: 0 4px 15px rgba(217, 83, 79, 0.3);
+}
+
+.btn-confirm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(217, 83, 79, 0.4);
+}
+
+/* Error message */
+.error-message {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  text-align: center;
+  border-left: 4px solid #d9534f;
+}
+
+/* Success message */
+.success-message {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  text-align: center;
+  border-left: 4px solid #5cb85c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+  
+  .header {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+  }
+  
+  .header h1 {
+      font-size: 1.8em;
+  }
+  
+  .booking-summary, .qr-payment, .confirm-section {
+      padding: 20px;
+  }
+  
+  .summary-item {
+      flex-direction: column;
+      gap: 5px;
+      text-align: center;
+  }
+  
+  .qr-code img {
+      width: 150px;
+      height: 150px;
+  }
+  
+  .button-group {
+      flex-direction: column;
+  }
+  
+  .btn-back, .btn-confirm {
+      width: 100%;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.payment-container > * {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.qr-code {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Loading animation cho QR code */
+@keyframes qrPulse {
+  0% {
+      box-shadow: 0 4px 15px rgba(92, 184, 92, 0.3);
+  }
+  50% {
+      box-shadow: 0 4px 25px rgba(92, 184, 92, 0.5);
+  }
+  100% {
+      box-shadow: 0 4px 15px rgba(92, 184, 92, 0.3);
+  }
+}
+
+.qr-code {
+  animation: fadeIn 1s ease-out, qrPulse 2s ease-in-out infinite;
+}
