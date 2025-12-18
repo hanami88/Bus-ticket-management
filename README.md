@@ -27,6 +27,6 @@ The development of an online bus ticket booking system is an optimal solution to
 
 **Login page with form validation**
 
-<img width="403" height="226" alt="Ảnh màn hình 2025-12-18 lúc 22 45 57" src="https://github.com/user-attachments/assets/49a8725d-85f5-4942-8de9-f1c22245c132" />
+<img width="903" height="509" alt="Ảnh màn hình 2025-12-18 lúc 22 52 59" src="https://github.com/user-attachments/assets/74f02696-df43-4113-a42d-856045e2743e" />
 
 
