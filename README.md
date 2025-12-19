@@ -1,64 +1,75 @@
-## Bus Ticket Management
+# 🚌 Bus Ticket Management System
+
+Một giải pháp chuyển đổi số cho việc đặt vé xe khách, giúp kết nối người dùng và nhà xe một cách hiệu quả, hiện đại.
+
+---
+
+## 🛠 Tech Stack
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Servlet](https://img.shields.io/badge/Servlet-007396?style=for-the-badge&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+---
+
+## 📝 Project Overview
 
 ### Background and Problem
-
 Currently, bus ticket booking still relies heavily on manual methods such as phone calls or purchasing tickets directly at ticket counters, which causes many inconveniences.
 
-**From the customer’s perspective:**
-- Difficulty in searching for route information and schedules  
-- Hard to compare ticket prices between different bus operators  
-- Time-consuming travel and long waiting times at ticket offices  
+**From the Customer’s Perspective:**
+* 🔍 Difficulty in searching for route information and schedules.
+* ⚖️ Hard to compare ticket prices between different bus operators.
+* ⏳ Time-consuming travel and long waiting times at ticket offices.
 
-**From the bus operator’s perspective:**
-- Complicated ticket management processes  
-- Difficulty in tracking passenger numbers  
-- Challenges in revenue reporting and statistics  
-- High risk of human errors  
+**From the Bus Operator’s Perspective:**
+* 📂 Complicated ticket management processes.
+* 📊 Difficulty in tracking passenger numbers.
+* 📉 Challenges in revenue reporting and statistics.
+* ⚠️ High risk of human errors.
 
-The development of an online bus ticket booking system is an optimal solution to address these issues, aligning with the digital transformation trend and significantly improving user experience.
+> **Solution:** The development of an online bus ticket booking system is an optimal solution to address these issues, aligning with the digital transformation trend and significantly improving user experience.
 
-**Use Case**
+---
 
-<img width="501" height="456" alt="Ảnh màn hình 2025-12-18 lúc 22 45 41" src="https://github.com/user-attachments/assets/03e70fbf-fb35-4a23-aefc-c1ae0ffeb808" />
+## 🏗 System Architecture & Design
 
-**Entity-Relationship Diagram**
+### 🔹 Use Case Diagram
+<img width="501" alt="Use Case Diagram" src="https://github.com/user-attachments/assets/03e70fbf-fb35-4a23-aefc-c1ae0ffeb808" />
 
-<img width="624" height="329" alt="Ảnh màn hình 2025-12-18 lúc 22 45 15" src="https://github.com/user-attachments/assets/1f1e0f2c-aada-453c-8d5b-2c688b16995a" />
+### 🔹 Entity-Relationship Diagram (ERD)
+<img width="624" alt="ERD" src="https://github.com/user-attachments/assets/1f1e0f2c-aada-453c-8d5b-2c688b16995a" />
 
-**Login page with form validation**
+---
 
-<img width="903" height="509" alt="Ảnh màn hình 2025-12-18 lúc 22 52 59" src="https://github.com/user-attachments/assets/74f02696-df43-4113-a42d-856045e2743e" />
+## 💻 Key Features
 
-**Register page with form validation**
-
-<img width="904" height="510" alt="Ảnh màn hình 2025-12-19 lúc 10 25 51" src="https://github.com/user-attachments/assets/a0e3f3a1-be15-4793-8ab9-d1da79b91cc6" />
-
-**Search & Trip Listing Page**
-
-<img width="900" height="509" alt="Ảnh màn hình 2025-12-19 lúc 10 26 09" src="https://github.com/user-attachments/assets/ac884b73-df0a-45e4-91e4-ad61642bee69" />
-
-**Booking Page with Detailed Form**
-
-<img width="902" height="507" alt="Ảnh màn hình 2025-12-19 lúc 10 26 22" src="https://github.com/user-attachments/assets/c54eff7d-65f5-4e56-81a5-830cf5430ecc" />
-
-**Payment & Confirmation Page**
-
-<img width="792" height="536" alt="Ảnh màn hình 2025-12-19 lúc 10 30 43" src="https://github.com/user-attachments/assets/bb8fdb42-c28a-4e7b-af39-4cf00850bcef" />
-
-**Admin Dashboard with General Statistics**
-
-<img width="872" height="490" alt="Ảnh màn hình 2025-12-19 lúc 10 30 55" src="https://github.com/user-attachments/assets/8708922f-1a19-47d1-8416-b1aaff981b48" />
-
-### 3.3.4. Special Features
-
-#### 1. Validation and Security
-* **Input Validation:** Comprehensive validation implemented on both **client-side** (JavaScript) and **server-side** (Java).
+### 1. Validation and Security
+* **Comprehensive Validation:** Implemented on both **client-side** (JavaScript) and **server-side** (Java) to ensure data integrity.
 * **SQL Injection Prevention:** Utilizes `PreparedStatement` to ensure secure database queries.
 * **Session Management:** Features automatic **session timeout** for enhanced user security.
-* **Role-Based Access Control (RBAC):** Strict permission management for different roles (e.g., **User** vs. **Admin**).
+* **Role-Based Access Control (RBAC):** Strict permission management for different roles (**User** vs. **Admin**).
 
-#### 2. Business Logic
-* **Seat Availability Check:** Real-time verification of available seats before allowing a booking.
-* **Automatic Seat Updates:** The system automatically decrements/updates the seat count immediately after a successful reservation.
+### 2. Business Logic
+* **Real-time Availability:** Verification of available seats before allowing a booking.
+* **Automatic Seat Updates:** System automatically updates the seat count immediately after a successful reservation.
 * **Automated Price Calculation:** Total fare is calculated automatically based on ticket quantity and pricing rules.
-* **Smart Trip Filtering:** Advanced filtering logic to display only upcoming trips (automatically hides past trips based on the current date).
+* **Smart Trip Filtering:** Display only upcoming trips (automatically hides past trips based on the current date).
+
+---
+
+## 🖼 User Interface Gallery
+
+| Page | Preview |
+| :--- | :--- |
+| **Login (with validation)** | <img src="https://github.com/user-attachments/assets/74f02696-df43-4113-a42d-856045e2743e" width="600"/> |
+| **Register (with validation)** | <img src="https://github.com/user-attachments/assets/a0e3f3a1-be15-4793-8ab9-d1da79b91cc6" width="600"/> |
+| **Search & Trip Listing** | <img src="https://github.com/user-attachments/assets/ac884b73-df0a-45e4-91e4-ad61642bee69" width="600"/> |
+| **Booking Details Form** | <img src="https://github.com/user-attachments/assets/c54eff7d-65f5-4e56-81a5-830cf5430ecc" width="600"/> |
+| **Payment & Confirmation** | <img src="https://github.com/user-attachments/assets/bb8fdb42-c28a-4e7b-af39-4cf00850bcef" width="600"/> |
+| **Admin Dashboard** | <img src="https://github.com/user-attachments/assets/8708922f-1a19-47d1-8416-b1aaff981b48" width="600"/> |
+
+---
+*Developed as part of the Web Programming course.*
