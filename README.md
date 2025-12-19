@@ -29,4 +29,15 @@ The development of an online bus ticket booking system is an optimal solution to
 
 <img width="903" height="509" alt="Ảnh màn hình 2025-12-18 lúc 22 52 59" src="https://github.com/user-attachments/assets/74f02696-df43-4113-a42d-856045e2743e" />
 
+**Register page with form validation**
+
+<img width="904" height="510" alt="Ảnh màn hình 2025-12-19 lúc 10 25 51" src="https://github.com/user-attachments/assets/a0e3f3a1-be15-4793-8ab9-d1da79b91cc6" />
+
+**Search & Trip Listing Page**
+
+<img width="900" height="509" alt="Ảnh màn hình 2025-12-19 lúc 10 26 09" src="https://github.com/user-attachments/assets/ac884b73-df0a-45e4-91e4-ad61642bee69" />
+
+**Booking Page with Detailed Form**
+
+<img width="902" height="507" alt="Ảnh màn hình 2025-12-19 lúc 10 26 22" src="https://github.com/user-attachments/assets/c54eff7d-65f5-4e56-81a5-830cf5430ecc" />
 
