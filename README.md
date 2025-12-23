@@ -1,6 +1,6 @@
 # 🚌 Bus Ticket Management System
 
-Một giải pháp chuyển đổi số cho việc đặt vé xe khách, giúp kết nối người dùng và nhà xe một cách hiệu quả, hiện đại.
+A digital transformation solution for bus ticket booking, enabling efficient and modern connectivity between passengers and bus operators.
 
 ---
 
